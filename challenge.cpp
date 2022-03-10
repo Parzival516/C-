@@ -1,16 +1,26 @@
 #include <iostream>
-#include <vector>
 using namespace std;
 int main()
 {
-    vector <int>vector_one{0};
-    vector <int>vector_two{0};
+    /*Problem:carpet cleaning service
+    charges:
+    $25 per small room
+    $35 per large room
+    sales tax rate is 6%
+    Estiamted are valid for 30 days*/
 
-    cout<<"Enter 10 to add: "<<endl;
-    int ten{0};
-    cin>>ten;
-    vector_one.push_back(ten);
-    cout<<vector_one.at(0)<<endl;
+    cout<<"Hello please enter number of rooms below"<<endl;
+    int large_room{0};
+    cout<<"Large rooms you want to be cleaned"<<endl;
+    cin>>large_room;
+    int small_room{0};
+    cout<<"Small rooms you want to be cleaned"<<endl;
+    cin>>small_room;
+
+    cout<<"Price per large room is: "<<large_room*35<<endl;
+    cout<<"Price per small room is : "<<small_room*25<<endl;
+
+    cout<<"Total price of rooms to be cleaned: "<<((large_room*35)+(small_room*25))+(0.06*(large_room*35))+(0.06*(small_room*25))<<endl;
 
     return 0;
 }
