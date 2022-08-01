@@ -2,6 +2,9 @@
 using namespace std;
 int main()
 {
-    cout<<"N1"<<endl;
+
+    char arr[100];
+    cin>>arr;
+    cout<<arr;
     return 0;
 }

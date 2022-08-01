@@ -1,18 +1,16 @@
-#include <iostream>
-#include <array>
+#include<bits/stdc++.h>
 using namespace std;
 
-int linearSearch(int arr[],int size, int searchValue)
+int linearSearch(int arr[],int n,int key)
 {
-    for (int i = 0; i < size; i++)
+    for(int i=0;i<n;i++)
     {
-        if (searchValue ==arr[i])
+        if(arr[i]==key)
         {
             return i;
         }
     }
     return -1;
-    
 
 }
 
@@ -21,21 +19,16 @@ int linearSearch(int arr[],int size, int searchValue)
 
 int main()
 {
-    int arr[]={1,2,3,4,5,6,7,8,9};
-    int in;
-    cin>>in;
-    int result=linearSearch(arr,6,in);
+int n;
+cin >> n;
+int arr[n];
+for(int i=0;i<n;i++)
+{
+    cin>>arr[i];
+}
+int key;
+cin>>key;
+cout<<linearSearch(arr,n,key)<<endl;
 
-    if (result>=0)
-    {
-        cout<<"The number "<<arr[result]<<" was found at the eleemnt with index "<<result<<endl;
-        
-    }
-    else
-    {
-        cout<<"the number "<<in<<" was not found"<<endl;
-    }
-    
-    
     return 0;
 }

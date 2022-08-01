@@ -1,25 +1,23 @@
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
+void swap(int *a,int *b)
+{
+    int temp=*a;
+    *a=*b;
+    *b=temp;
+}
+
 int main()
 {
+int a=2;
+int b=4;
+int *aptr=&a;
+int *bptr=&b;
+swap(a,b);
+cout<<a<<""<<b<<endl;
 
-    // string name="Parzival";
-    // int age=100;
 
-string name="Parzival";
-int age=100;
 
-string* pName=&name;
-int* pAge=&age;
 
-cout<<pName<<endl;
-cout<<pAge<<endl;
-
-string food="pizza";
-
-string* pFood=&food;
-cout<<pFood<<endl;
-    cout<<&name<<endl;
-    cout<<&age<<endl;
     return 0;
 }

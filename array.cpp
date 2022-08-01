@@ -1,41 +1,27 @@
-#include <iostream>
-#include <string>
-#include<algorithm>
+#include<bits/stdc++.h>
 using namespace std;
 int main()
 {
-//string cars[]={"corvette","bmw","tesla","audi"};
+   
+    int n;
+    cin>>n;
+    int array[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>array[i];
+    }
+int maxNo=INT_MIN;
+int minNo=INT_MAX;
+    for(int i=0;i<n;i++)
+    {
+    maxNo=max(maxNo,array[i]);
+    minNo=min(minNo,array[i]);
+    
 
-//for(int i=0; i<sizeof(cars); i++)
-//{
-
-//    cout<<" "<<cars[i];
-//}
-
-cout<<"How many cars do you have?";
-int number;
-cin>>number;
-cin.ignore();
-
-string* pCars=new string[number];
-
-for (int i = 0; i < number; i++)
-{
-    cout<<"Enter car #"<<i+1<<" "<<endl;
-
-    getline(cin,pCars[i]);
-}
-cout<<"Here is your garage!"<<endl;
-cout<<"==============="<<endl;
-for (int i = 0; i < number; i++)
-{
-    cout<<"parking spot number#"<<i+1<<" "<<pCars[i]<<endl;
-}
-
-
-
-
-
-
+      
+    }
+    cout<<maxNo<<" "<<minNo<<endl;
+    
+    
     return 0;
 }

@@ -1,45 +1,22 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int main()
 {
-    int num{};
-    const int target{10};
-    cout<<"Enter a number a and i'll compare it to "<<target<<endl;
-    cin>>num;
+    int money;
+    cin>>money;
 
-    if(num>=target)
+    if (money>5000)
     {
-        cout<<"============================"<<endl;
-        cout<<num<<" is greater than or equal to "<<target<<endl;
-        int diff{num-target};
-        cout<<num<<" is "<<diff<<" greater than "<<target<<endl;
-
+        cout<<"More than 5k";
+    }
+    else if(money>4000&&money<5000)
+    {
+        cout<<"More than 4k";
     }
     else
     {
-        cout<<"====================="<<endl;
-        cout<<num<<" is less than or equal to "<<target<<endl;
-        int diff{target-num};
-        cout<<num<<" is "<<diff<<" smaller than "<<target<<endl;
-
-        return 0;
+        cout<<"Less than 4k";
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
     return 0;
 }

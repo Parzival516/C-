@@ -1,42 +1,20 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
-const double pi{3.14159};
-
-double calc_area_circle(double radius)
+int add(int a,int b)
 {
-    return pi*radius*radius;
+    int sum=a+b;
+    return sum;
 }
-
-double calc_volume_cylinder(double radius,double height)
-{
-    return pi*radius*radius*height;
-}
-
-
-
-
-void area_circle()
-{
-    double radius{};
-    cout<<"\nEnter the radius of the circle: ";
-    cin>>radius;
-    cout<<"The area of a circle with radius "<<radius<<" is "<<calc_area_circle(radius)<<endl;
-}
-void volume_cylinder()
-{
-    double radius{};
-    double height{};
-    cout<<"\nEnter the radius and height of the cylinder: ";
-    cin>>radius>>height;
-    cout<<"The volume of a cylinder with radius "<<radius<<" is "<<" and height "<<" is "<<calc_volume_cylinder(radius,height)<<endl;
-}
-
 
 
 int main()
 {
-    area_circle();
-    volume_cylinder();
+
+int x,y;
+cin>>x>>y;
+
+cout<<add(x,y);
+
     return 0;
 }
